@@ -1,4 +1,4 @@
-const say = require('say')
+const say = require('say');
 const express = require('express');
 const http = require('http');
 
@@ -18,3 +18,4 @@ export function test() {
             console.log(`Server running on ${host}:${port}`)
     })
 }
+test()

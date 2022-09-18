@@ -1,5 +1,5 @@
 const btn = document.querySelector('.btn')
-import {test} from '../backend/index.js'
-btn.addEventListener('click', function() {
 
+btn.addEventListener('click', function() {
+    fetch('http://localhost:8000/')
 })
