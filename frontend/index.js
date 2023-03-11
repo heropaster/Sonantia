@@ -1,5 +1,4 @@
-const btn = document.querySelector('.btn')
+const btn = document.querySelector('.confrim');
+const inputWord = document.querySelector('.wordsHolder');
 
-btn.addEventListener('click', function() {
-    fetch('http://localhost:8000/')
-})
+let value = inputWord.value;

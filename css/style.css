@@ -1,4 +1,18 @@
-.btn {
+body {
+    margin: 0;
+}
+.input {
+    position: fixed;
+    top:20%;
+    left:50%;
+}
+.confirm {
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin:10px auto;
+    padding: 0;
     cursor: pointer;
-    border:2px solid green;
+    background-image: url('../images/confirm.png');
+    border:none;
 }

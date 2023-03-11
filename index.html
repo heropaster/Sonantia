@@ -8,7 +8,13 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="btn" method="post" action="">Нажми</div>
+    <form class="container" action="/voice" method="post">
+        <div class="input" method="post">
+            <h1>Write word</h1>
+            <input type="text" class="wordsHolder" name="word" placeholder="word"></input>
+            <button class="confirm"></button>
+        </div>
+    </form>
     <script src="frontend/index.js" type="module"></script>
 </body>
 </html>
