@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #121212;
+}
+
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.App h1 {
+  color: #4d6cfa;
+}
+.App .interaction {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.App .interaction h3 {
+  color: #4d6cfa;
+}
+.App .interaction .wordinput {
+  width: 30vw;
+}
+.App .interaction .wordinput input {
+  color: #fff;
+}
+.App .interaction .wordinput label {
+  color: rgba(255, 255, 255, 0.568627451);
+}
+.App .interaction :hover button {
+  color: #dd840e;
+}
+.App .interaction button {
+  color: #fff;
+}/*# sourceMappingURL=App.css.map */
