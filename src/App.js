@@ -4,7 +4,7 @@ import Interactions from "./Interactions.jsx";
 function App() {
   return (
     <div className="App">
-      <h2>Test</h2>
+      <h1>First tests</h1>
       <Interactions />
     </div>
   );

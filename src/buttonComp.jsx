@@ -3,7 +3,10 @@ import Button from "@mui/material/Button";
 
 const ButtonComp = ({ value }) => {
   const handleClick = () => {
-    console.log(value);
+  let utter = new SpeechSynthesisUtterance(value)
+  utter.lang = "en"
+  speechSynthesis.speak(utter)
+  console.log(utter)
   };
   return (
     <div>

@@ -8,7 +8,7 @@ const Interactions = () => {
     setInputValue(value);
   };
   return (
-    <div>
+    <div className="interaction">
       <WordInput onValueChange={handleValueChange} />
       <ButtonComp value={inputValue} />
     </div>

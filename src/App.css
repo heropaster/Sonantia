@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+body {
+  background-color: #121212;
+}
+
 .App {
   text-align: center;
   display: flex;
@@ -10,50 +14,29 @@
   align-items: center;
   gap: 20px;
 }
-.App .wordinput {
-  width: 30vw;
+.App h1 {
+  color: #4d6cfa;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    -webkit-animation: App-logo-spin infinite 20s linear;
-            animation: App-logo-spin infinite 20s linear;
-  }
-}
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App .interaction {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 20px;
 }
-
-.App-link {
-  color: #61dafb;
+.App .interaction h3 {
+  color: #4d6cfa;
 }
-
-@-webkit-keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App .interaction .wordinput {
+  width: 30vw;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}/*# sourceMappingURL=app.css.map */
+.App .interaction .wordinput input {
+  color: #fff;
+}
+.App .interaction .wordinput label {
+  color: rgba(255, 255, 255, 0.568627451);
+}
+.App .interaction :hover button {
+  color: #dd840e;
+}
+.App .interaction button {
+  color: #fff;
+}/*# sourceMappingURL=App.css.map */
