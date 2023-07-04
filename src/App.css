@@ -1,42 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,300;0,400;1,700&display=swap");
 * {
   margin: 0;
   padding: 0;
 }
 
+body,
+html {
+  height: 100vh;
+}
+
 body {
-  background-color: #121212;
+  background-color: #ccd7e4;
+  color: #ff7f51;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+#root {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .App {
   text-align: center;
   display: flex;
-  flex-direction: column;
   align-items: center;
   gap: 20px;
 }
-.App h1 {
-  color: #4d6cfa;
+.App .title {
+  text-transform: uppercase;
 }
 .App .interaction {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-.App .interaction h3 {
-  color: #4d6cfa;
-}
 .App .interaction .wordinput {
   width: 30vw;
 }
 .App .interaction .wordinput input {
-  color: #fff;
-}
-.App .interaction .wordinput label {
-  color: rgba(255, 255, 255, 0.568627451);
+  color: #3a435e;
 }
 .App .interaction :hover button {
-  color: #dd840e;
+  color: #ff7f51;
 }
 .App .interaction button {
-  color: #fff;
+  color: #121212;
 }/*# sourceMappingURL=App.css.map */

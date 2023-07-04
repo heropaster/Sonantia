@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import WordInput from "./wordInput";
 import Check from "./Check";
 import Start from "./Start";
+
 const Interactions = () => {
   const [inputValue, setInputValue] = useState("");
   const handleValueChange = (value) => {

@@ -3,7 +3,7 @@ import Button from "@mui/material/Button";
 
 const Check = ({ value }) => {
   const handleClick = () => {
-    
+    console.log(value);
   };
   return (
     <div>
