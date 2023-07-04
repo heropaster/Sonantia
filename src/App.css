@@ -4,7 +4,7 @@
 }
 
 body {
-  background-color: #121212;
+  background-color: #ccd7e4;
 }
 
 .App {
@@ -15,7 +15,7 @@ body {
   gap: 20px;
 }
 .App h1 {
-  color: #4d6cfa;
+  color: #121212;
 }
 .App .interaction {
   display: flex;
@@ -23,20 +23,20 @@ body {
   gap: 20px;
 }
 .App .interaction h3 {
-  color: #4d6cfa;
+  color: #121212;
 }
 .App .interaction .wordinput {
   width: 30vw;
 }
 .App .interaction .wordinput input {
-  color: #fff;
+  color: #121212;
 }
 .App .interaction .wordinput label {
-  color: rgba(255, 255, 255, 0.568627451);
+  color: #121212;
 }
 .App .interaction :hover button {
   color: #dd840e;
 }
 .App .interaction button {
-  color: #fff;
+  color: #121212;
 }/*# sourceMappingURL=App.css.map */

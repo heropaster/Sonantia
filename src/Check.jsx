@@ -1,12 +1,9 @@
 import React, { useState } from "react";
 import Button from "@mui/material/Button";
 
-const ButtonComp = ({ value }) => {
+const Check = ({ value }) => {
   const handleClick = () => {
-  let utter = new SpeechSynthesisUtterance(value)
-  utter.lang = "en"
-  speechSynthesis.speak(utter)
-  console.log(utter)
+    console.log(value)
   };
   return (
     <div>
@@ -16,4 +13,4 @@ const ButtonComp = ({ value }) => {
     </div>
   );
 };
-export default ButtonComp;
+export default Check;
