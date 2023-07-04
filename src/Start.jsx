@@ -34,7 +34,7 @@ const Start = () => {
     }
     return (
         <div>
-        <Button variant='filled' onClick={startGame}>Начать</Button>
+        <Button variant='outlined' onClick={startGame}>Начать</Button>
         </div>
     )
 }
