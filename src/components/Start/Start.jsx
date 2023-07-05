@@ -1,8 +1,9 @@
 import React, { useEffect, useState} from "react";
 import Button from "@mui/material/Button";
-import { Context } from "./context";
+import { Context } from "../Context/context.js";
 import { useContext } from "react";
 const Start = () => {
+  let synth = window.speechSynthesis;
   const words = [
     "cucumber",
     "queue",
@@ -16,20 +17,15 @@ const Start = () => {
     "colonel",
   ];
   
-  
   function startGame() {
     let randomWord = words[Math.floor(Math.random() * words.length)];
     Context._currentValue = randomWord;
     speakWord(randomWord);
-    console.log(Context._currentValue)
-    document.getElementById('start').disabled = true;
   }
   function speakWord(word) {
-    const voices = speechSynthesis.getVoices();
     let utter = new SpeechSynthesisUtterance(word);
     utter.lang = "en";
-    utter.voice = voices[4];
-    speechSynthesis.speak(utter);
+    synth.speak(utter);
   }
 
   return (

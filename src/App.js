@@ -1,12 +1,11 @@
 import React from "react";
-import "./App.css";
-import Interactions from "./Interactions.jsx";
-import About from './About.jsx'
+import "./styles/App.css";
+import Interactions from "./components/Interactions/Interactions.jsx";
+import About from "./components/About/About.jsx";
 function App() {
   return (
-    
     <div className="App">
-      <About/>
+      <About />
       <h1 className="title">Sonantia</h1>
       <Interactions />
     </div>
