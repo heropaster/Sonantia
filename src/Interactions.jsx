@@ -5,6 +5,7 @@ import Start from "./Start";
 
 const Interactions = () => {
   const [inputValue, setInputValue] = useState("");
+  const [currentWord, setCurrentWord] = useState("")
   const handleValueChange = (value) => {
     setInputValue(value);
   };

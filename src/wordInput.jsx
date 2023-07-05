@@ -7,10 +7,6 @@ const WordInput = ({ onValueChange }) => {
     setValue(event.target.value);
   };
 
-  useEffect(() => {
-    onValueChange(value);
-  }, [value, onValueChange]);
-
   return (
     <div>
       <TextField
