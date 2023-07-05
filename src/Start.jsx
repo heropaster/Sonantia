@@ -1,8 +1,8 @@
 import React, { useEffect, useState} from "react";
 import Button from "@mui/material/Button";
-
+import { Context } from "./context";
+import { useContext } from "react";
 const Start = () => {
-  const [currentWord, setCurrentWord] = useState("");
   const words = [
     "cucumber",
     "queue",
@@ -19,10 +19,10 @@ const Start = () => {
   
   function startGame() {
     let randomWord = words[Math.floor(Math.random() * words.length)];
-    setCurrentWord(randomWord);
+    Context._currentValue = randomWord;
     speakWord(randomWord);
-    console.log(randomWord)
-    document.getElementById('check').disabled = false;
+    console.log(Context._currentValue)
+    document.getElementById('start').disabled = true;
   }
   function speakWord(word) {
     const voices = speechSynthesis.getVoices();
