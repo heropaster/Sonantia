@@ -27,7 +27,7 @@ const Score = (props) => {
     return (
         <div style={containerStyles}>
             <div style={fillerStyles}>
-                <span style={labelStyles}>{`${completed}`}</span>
+                <span style={labelStyles}>{completed!=0 ? `${completed}`: ''}</span>
             </div>
         </div>
     )

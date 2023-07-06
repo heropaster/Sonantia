@@ -4,7 +4,7 @@ import Button from "@mui/material/Button";
 import { Context } from "../Context/context.js";
 import Score from "../Score/Score.jsx";
 const Check = ({ value }) => {
-
+  const [score, setScore] = useState(0)
   const handleClick = () => {
     checkAnswer(value)
   };
@@ -16,7 +16,7 @@ const Check = ({ value }) => {
   }
   return (
     <div>
-      <Score completed={50}/>
+      <Score completed={score}/>
       <Button id="check" variant="outlined" onClick={handleClick}>
         Проверка
       </Button>
