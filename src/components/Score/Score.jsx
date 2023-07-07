@@ -1,33 +1,11 @@
 import React from 'react'
-
+import './Score.css'
 const Score = (props) => {
-    const {background, completed} = props;
-    const containerStyles = {
-        height: 25,
-        maxWidth: 576,
-        background: '#f1dab8ad',
-        borderRadius: 40,
-        margin: 50
-    };
-    const fillerStyles = {
-        boxSizing: 'border-box',
-        height: 25,
-        maxWidth: 576,
-        width: `${completed}%`,
-        backgroundColor: '#ff7f51',
-        borderRadius: 40,
-        textAlign: 'right',
-        padding: 3
-    }
-    const labelStyles = {
-        paddingTop: 3,
-        color: '#fff'
-    }
-    
+    const {completed} = props;
     return (
-        <div style={containerStyles}>
-            <div style={fillerStyles}>
-                <span style={labelStyles}>{completed!=0 ? `${completed}`: ''}</span>
+        <div className='progress-container'>
+            <div className='progress' style={completed != 0 ? { width: completed + `%`, padding: 3}: {width: 0, padding: 0}}>
+                <span className='progress_value' >{completed != 0 ? `${completed}`:''}</span>
             </div>
         </div>
     )

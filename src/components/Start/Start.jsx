@@ -1,7 +1,7 @@
 import React, { useEffect, useState} from "react";
 import Button from "@mui/material/Button";
 import { Context } from "../Context/context.js";
-const Start = () => {
+const Start = ({setWords}) => {
   let synth = window.speechSynthesis;
   const words = [
     "cucumber",
@@ -15,6 +15,7 @@ const Start = () => {
     "irregardless",
     "colonel",
   ];
+  
   let unusedWors = [...words]
   function startGame() {
     let randomWord = unusedWors[Math.floor(Math.random() * unusedWors.length)];
@@ -24,7 +25,8 @@ const Start = () => {
     }
     else {
       Context._currentValue = randomWord;
-      unusedWors = unusedWors.filter((word) => word !== randomWord)
+      unusedWors = unusedWors.filter((word) => word !== randomWord);
+      console.log(randomWord)
       speakWord(randomWord);
     }
   }

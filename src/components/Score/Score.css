@@ -1,0 +1,21 @@
+.progress-container {
+  height: 25px;
+  max-width: 576px;
+  background: rgba(241, 218, 184, 0.6784313725);
+  border-radius: 40px;
+  margin-bottom: 50px;
+}
+.progress-container .progress {
+  box-sizing: border-box;
+  height: 25px;
+  max-width: 576px;
+  background-color: #ff7f51;
+  border-radius: 40px;
+  text-align: right;
+  padding: 3px;
+  transition: width 0.6s ease;
+}
+.progress-container .progress_value {
+  padding-top: 3px;
+  color: #fff;
+}/*# sourceMappingURL=Score.css.map */
