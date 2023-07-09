@@ -1,20 +1,19 @@
 import React, { useState } from "react";
 import WordInput from "../WordInput/wordInput.jsx";
-import Check from "../Check/Check.jsx";
+import Check from "../Check/Check.js";
 import Start from "../Start/Start.jsx";
 
 const Interactions = () => {
   const [inputValue, setInputValue] = useState("");
-  const [currentWord, setCurrentWord] = useState("")
-  const [words, setWords] = useState([])
-  const handleValueChange = (value) => {
+  // const [words, setWords] = useState([])
+  const handleValueChange = (value: string) => {
     setInputValue(value);
   };
   return (
     <div className="interaction">
-      <Start setWords={setWords} />
+      <Start />
       <WordInput onValueChange={handleValueChange} />
-      <Check value={inputValue} words={words}/>
+      <Check value={inputValue} />
     </div>
   );
 };

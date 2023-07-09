@@ -1,7 +1,7 @@
-import React, { useEffect, useState} from "react";
+import React, { useContext } from "react";
 import Button from "@mui/material/Button";
 import { Context } from "../Context/context.js";
-const Start = ({setWords}) => {
+const Start = () => {
   let synth = window.speechSynthesis;
   const words = [
     "cucumber",
@@ -17,10 +17,14 @@ const Start = ({setWords}) => {
   ];
   
   let unusedWors = [...words]
+  
   function startGame() {
     let randomWord = unusedWors[Math.floor(Math.random() * unusedWors.length)];
-    if (randomWord == undefined) {
-      document.getElementById('start').disabled = true;
+    const startButton = document.getElementById('start') as HTMLButtonElement;
+    if (randomWord === undefined) {
+      if (startButton) {
+        startButton.disabled = true;
+      }
       return Context._currentValue = 'undefined';
     }
     else {
@@ -30,7 +34,7 @@ const Start = ({setWords}) => {
       speakWord(randomWord);
     }
   }
-  function speakWord(word) {
+  function speakWord(word:string) {
     let utter = new SpeechSynthesisUtterance(word);
     utter.lang = "en";
     synth.speak(utter);

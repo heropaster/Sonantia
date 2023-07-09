@@ -3,12 +3,12 @@ import { useState } from "react";
 import Button from "@mui/material/Button";
 import { Context } from "../Context/context.js";
 import Score from "../Score/Score.jsx";
-const Check = ({ value, words }) => {
+const Check = (props: {value: string}) => {
   const [score, setScore] = useState(0)
   const handleClick = () => {
-    checkAnswer(value)
+    checkAnswer(props.value)
   };
-  function checkAnswer(answer) {
+  function checkAnswer(answer: string) {
 
     if (answer.toLowerCase() ===  Context._currentValue.toLowerCase()) {
       console.log(+1)
