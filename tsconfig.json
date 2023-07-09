@@ -5,7 +5,9 @@
       "jsx": "react",
       "strict": true,
       "esModuleInterop": true,
-      "resolveJsonModule": true
+      "resolveJsonModule": true,
+      "noEmit": true,
+      "allowImportingTsExtensions": true
     },
     "include": ["src"]
   }

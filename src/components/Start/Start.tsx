@@ -1,7 +1,9 @@
 import React, { useContext } from "react";
 import Button from "@mui/material/Button";
-import { Context } from "../Context/context.js";
-const Start = () => {
+interface Props {
+  setWord: React.Dispatch<React.SetStateAction<string>>;
+}
+const Start: React.FC<Props> = ({setWord}) => {
   let synth = window.speechSynthesis;
   const words = [
     "cucumber",
@@ -25,10 +27,10 @@ const Start = () => {
       if (startButton) {
         startButton.disabled = true;
       }
-      return Context._currentValue = 'undefined';
+      return setWord('undefined')
     }
     else {
-      Context._currentValue = randomWord;
+      setWord(randomWord);
       unusedWors = unusedWors.filter((word) => word !== randomWord);
       console.log(randomWord)
       speakWord(randomWord);

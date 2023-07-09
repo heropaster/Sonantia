@@ -1,7 +1,7 @@
 import React from "react";
 import "./styles/App.css";
-import Interactions from "./components/Interactions/Interactions.jsx";
-import About from "./components/About/About.jsx";
+import Interactions from "./components/Interactions/Interactions.tsx";
+import About from "./components/About/About.tsx";
 function App() {
   return (
     <div className="App">
