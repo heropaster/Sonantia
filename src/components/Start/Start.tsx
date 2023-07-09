@@ -1,9 +1,10 @@
-import React, { useContext } from "react";
+import React from "react";
 import Button from "@mui/material/Button";
 interface Props {
-  setWord: React.Dispatch<React.SetStateAction<string>>;
+  setWord: React.Dispatch<React.SetStateAction<string>>,
+  setWords: React.Dispatch<React.SetStateAction<string[]>>
 }
-const Start: React.FC<Props> = ({setWord}) => {
+const Start: React.FC<Props> = ({setWord, setWords}) => {
   let synth = window.speechSynthesis;
   const words = [
     "cucumber",
@@ -16,6 +17,7 @@ const Start: React.FC<Props> = ({setWord}) => {
     "ironic",
     "irregardless",
     "colonel",
+    'repository'
   ];
   
   let unusedWors = [...words]
@@ -23,6 +25,7 @@ const Start: React.FC<Props> = ({setWord}) => {
   function startGame() {
     let randomWord = unusedWors[Math.floor(Math.random() * unusedWors.length)];
     const startButton = document.getElementById('start') as HTMLButtonElement;
+    setWords(words)
     if (randomWord === undefined) {
       if (startButton) {
         startButton.disabled = true;
