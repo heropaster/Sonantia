@@ -10,8 +10,8 @@
   cursor: pointer;
   display: block;
   position: relative;
-  width: 30px;
-  height: 30px;
+  width: 50px;
+  height: 40px;
 }
 .navigation__line {
   display: block;
@@ -30,6 +30,17 @@
 .navigation__line_third {
   top: 16px;
 }
-.navigation .navigation__item:hover .navigation__line {
-  background: #1976d2;
+.navigation .navigation__item:not(.active):hover .navigation__line_first,
+.navigation .navigation__item.active .navigation__line_first {
+  opacity: 0;
+}
+.navigation .navigation__item:not(.active):hover .navigation__line_second,
+.navigation .navigation__item.active .navigation__line_second {
+  transform: rotate(45deg);
+  top: 8px;
+}
+.navigation .navigation__item:not(.active):hover .navigation__line_third,
+.navigation .navigation__item.active .navigation__line_third {
+  transform: rotate(135deg);
+  top: 8px;
 }/*# sourceMappingURL=About.css.map */
