@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from "react";
 import TextField from "@mui/material/TextField";
-const WordInput = ({ onValueChange }) => {
+interface Props {
+  onValueChange: (value: string) => void;
+}
+const WordInput: React.FC<Props> = ({ onValueChange }) => {
   const [value, setValue] = useState("");
 
-  const handleChange = (event) => {
+  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setValue(event.target.value);
     // console.log(value)
   };

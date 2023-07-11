@@ -1,10 +1,5 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
-import { Context } from "./components/Context/context.js";
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(
-  <Context.Provider value={""}>
-    <App />
-  </Context.Provider>
-);
+root.render(<App />);
