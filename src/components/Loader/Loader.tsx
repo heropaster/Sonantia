@@ -1,16 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Loader.css'
 const Loader = () => {
-    // var scene = document.querySelector('.loader__scene');
-    // var cube = document.querySelector('.cube');
-    // var originX = 50;
-    // var originY = 50;
-
-    // function updatePerspectiveOrigin() {
-    // scene.style.perspectiveOrigin = originX + '% ' + originY + '%';
-    // }
+    const [className, setClassName] = useState('visible');
+    setTimeout(() => {
+        setClassName('hidden')
+    }, 6500);
     return (
-        <div className="loader">
+        <div className={`loader ${className}`}>
             <div className="loader__scene">
                 <div className="cube">
                     <div className="cube__face cube__face--front">sonantia</div>

@@ -2,11 +2,25 @@
 
 .navigation {
   position: fixed;
-  z-index: 10;
+  z-index: 50;
   top: 60px;
   right: 40px;
   width: 50px;
   height: 50px;
+  .aboutBg {
+    width: 95vw;
+    height: 90vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: $background;
+    z-index: 10;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    &.active {
+      opacity: 1;
+    }
+  }
   &__item {
     cursor: pointer;
     display: block;
@@ -43,6 +57,12 @@
     .navigation__line_third {
       transform: rotate(135deg);
       top: 8px;
+    }
+  }
+  .navigation__item.active {
+    .navigation__line_second,
+    .navigation__line_third {
+      background: #263d42;
     }
   }
 }

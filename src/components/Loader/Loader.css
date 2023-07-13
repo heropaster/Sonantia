@@ -69,6 +69,10 @@
   background: rgba(224, 255, 79, 0.7);
 }
 
+.hidden {
+  display: none;
+}
+
 @keyframes spinCube {
   0% {
     transform: translateZ(-100px) rotateX(0deg) rotateY(0deg);
@@ -83,6 +87,5 @@
   }
   100% {
     opacity: 0;
-    display: none;
   }
 }/*# sourceMappingURL=Loader.css.map */

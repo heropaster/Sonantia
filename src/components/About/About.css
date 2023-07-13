@@ -1,10 +1,24 @@
 .navigation {
   position: fixed;
-  z-index: 10;
+  z-index: 50;
   top: 60px;
   right: 40px;
   width: 50px;
   height: 50px;
+}
+.navigation .aboutBg {
+  width: 95vw;
+  height: 90vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #ccd7e4;
+  z-index: 10;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.navigation .aboutBg.active {
+  opacity: 1;
 }
 .navigation__item {
   cursor: pointer;
@@ -43,4 +57,8 @@
 .navigation .navigation__item.active .navigation__line_third {
   transform: rotate(135deg);
   top: 8px;
+}
+.navigation .navigation__item.active .navigation__line_second,
+.navigation .navigation__item.active .navigation__line_third {
+  background: #263d42;
 }/*# sourceMappingURL=About.css.map */

@@ -1,7 +1,7 @@
 import React from 'react';
 import "./About.css"
 const About = () => {
-    const [isActive, setActive] = React.useState(false)
+    const [isActive, setActive] = React.useState(true)
     function handleToggle() {
         setActive(!isActive)
     }
