@@ -2,10 +2,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap");
 .loader {
   position: fixed;
-  width: 95vw;
-  height: 97.5vh;
-  top: 2.5vh;
-  left: 2.5vw;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
   background: $background;
   display: flex;
   justify-content: center;
@@ -38,7 +38,7 @@
         font-size: 40px;
         text-align: center;
         text-transform: capitalize;
-        font-family: "Source Code Pro", sans-serif;
+        font-family: "Tektur", sans-serif;
         display: flex;
         align-items: center;
       }

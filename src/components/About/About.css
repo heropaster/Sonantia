@@ -8,14 +8,17 @@
 }
 .navigation .aboutBg {
   width: 95vw;
-  height: 90vh;
+  height: 70vh;
   position: fixed;
-  top: 0;
-  left: 0;
+  top: 15vh;
+  left: 2.5vw;
   background: #ccd7e4;
   z-index: 10;
   opacity: 0;
   transition: opacity 0.3s ease;
+}
+.navigation .aboutBg .about__title {
+  color: #4431e9;
 }
 .navigation .aboutBg.active {
   opacity: 1;
@@ -26,6 +29,7 @@
   position: relative;
   width: 50px;
   height: 40px;
+  z-index: 15;
 }
 .navigation__line {
   display: block;

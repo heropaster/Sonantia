@@ -12,7 +12,9 @@ const About = () => {
                     <span className='navigation__line navigation__line_second'></span>
                     <span className='navigation__line navigation__line_third'></span>
                 </div>
-            <div className={`aboutBg ${isActive ? "active": ""}`}></div>
+            <div className={`aboutBg ${isActive ? "active": ""}`}>
+                <h2 className='about__title'>Welcome to <br /><span className='important'>Sonantia</span></h2>
+            </div>
         </nav>
     )
 }
