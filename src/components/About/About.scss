@@ -2,17 +2,35 @@
 
 .navigation {
   position: fixed;
-  z-index: 100;
+  z-index: 50;
   top: 60px;
   right: 40px;
   width: 50px;
   height: 50px;
+  .aboutBg {
+    width: 95vw;
+    height: 70vh;
+    position: fixed;
+    top: 15vh;
+    left: 2.5vw;
+    background: $background;
+    z-index: 10;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    .about__title {
+      color: #4431e9;
+    }
+    &.active {
+      opacity: 1;
+    }
+  }
   &__item {
     cursor: pointer;
     display: block;
     position: relative;
     width: 50px;
     height: 40px;
+    z-index: 15;
   }
   &__line {
     display: block;
@@ -43,6 +61,12 @@
     .navigation__line_third {
       transform: rotate(135deg);
       top: 8px;
+    }
+  }
+  .navigation__item.active {
+    .navigation__line_second,
+    .navigation__line_third {
+      background: #263d42;
     }
   }
 }
