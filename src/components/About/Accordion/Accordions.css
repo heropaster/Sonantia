@@ -1,0 +1,18 @@
+.accordion-container {
+  margin: 10vh auto 0;
+  width: 60vw;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+}
+.accordion-container .accordion__item {
+  width: 300px;
+  height: -moz-max-content;
+  height: max-content;
+  padding: 15px 10px;
+  background: #fff;
+}
+.accordion-container .accordion__item__header {
+  height: 30px;
+  cursor: pointer;
+}/*# sourceMappingURL=Accordions.css.map */
