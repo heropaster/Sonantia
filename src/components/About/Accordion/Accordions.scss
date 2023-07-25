@@ -1,3 +1,4 @@
+@import '../../../styles/vars';
 .accordion-container {
     margin: 10vh auto 0;
     width: 60vw;
@@ -6,12 +7,25 @@
     justify-content: space-between;
     .accordion__item {
         width: 300px;
-        height: max-content;
+        height: min-content;
         padding: 15px 10px;
         background: #fff;
+        height: max-content;
         &__header {
             height: 30px;
             cursor: pointer;
         }
+        &__body {
+            transition: 0.3s ease;
+            opacity: 0;
+            max-height: 0;
+            &.showed {
+                max-height: 300px;
+                opacity: 1;
+            }
+        }
     }
+}
+.blue {
+    color: $blue;
 }

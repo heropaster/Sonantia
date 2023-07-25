@@ -7,12 +7,27 @@
 }
 .accordion-container .accordion__item {
   width: 300px;
-  height: -moz-max-content;
-  height: max-content;
+  height: -moz-min-content;
+  height: min-content;
   padding: 15px 10px;
   background: #fff;
+  height: -moz-max-content;
+  height: max-content;
 }
 .accordion-container .accordion__item__header {
   height: 30px;
   cursor: pointer;
+}
+.accordion-container .accordion__item__body {
+  transition: 0.3s ease;
+  opacity: 0;
+  max-height: 0;
+}
+.accordion-container .accordion__item__body.showed {
+  max-height: 300px;
+  opacity: 1;
+}
+
+.blue {
+  color: #4431e9;
 }/*# sourceMappingURL=Accordions.css.map */
