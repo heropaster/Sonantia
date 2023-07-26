@@ -16,7 +16,7 @@ const Accordions = () => {
                     Что такое <span className="blue">Sonantia</span> ?
                 </div>
                 <div className="accordion__item__body">
-                    <span className="blue">Sonantia</span> - приложение, которое воспроизводит слова на английском языке и проверяет ваше понимание языка на звук.
+                    <span className="blue">Sonantia</span> - это приложение, которое воспроизводит английские слова и проверяет ваше восприятие звука
                 </div>
             </div>  
         </div>
