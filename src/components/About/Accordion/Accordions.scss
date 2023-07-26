@@ -24,7 +24,7 @@
             &::after {
                 content: '';
                 position: absolute;
-                top: 13px;
+                top: 15px;
                 right: 20px;
                 display: block;
                 width: 12px;
@@ -41,6 +41,8 @@
                 border-bottom-right-radius: 0;
                 &::after {
                     transform: rotate(45deg);
+                    border-bottom: 2px solid #000;
+                    border-right: 2px solid #fff;;
                     border-top-color: #000;
                     border-left-color: #fff;
                 }
