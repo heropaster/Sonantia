@@ -1,5 +1,6 @@
 import React from 'react';
-import "./About.css"
+import "./About.css";
+import Accordions from './Accordion/Accordions';
 const About = () => {
     const [isActive, setActive] = React.useState(true)
     function handleToggle() {
@@ -14,6 +15,9 @@ const About = () => {
                 </div>
             <div className={`aboutBg ${isActive ? "active": ""}`}>
                 <h2 className='about__title'>Welcome to <br /><span className='important'>Sonantia</span></h2>
+                {/* Идея создать кнопки: Что это за приложение и для чего оно? Как начать? Что ждет Sonantia в будущем? */}
+                {/* Кнопки должны при клике показывать плавно появляющийся dropdown блок с текстом(На кнопках можно сделать или плюс или стрелочку, это неважно) */}
+                <Accordions/>
             </div>
         </nav>
     )
