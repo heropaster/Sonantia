@@ -12,7 +12,7 @@
   z-index: 100;
   animation: disappear 0.5s ease forwards;
   animation-iteration-count: 1;
-  animation-delay: 6s;
+  animation-delay: 4s;
 }
 .loader__scene {
   width: 700px;
@@ -28,7 +28,7 @@
   position: relative;
   transform-style: preserve-3d;
   transform: translateZ(-100px);
-  animation: spinCube 3s ease-in-out;
+  animation: spinCube 2s ease-in-out;
   animation-iteration-count: 2;
 }
 .loader__scene .cube__face {

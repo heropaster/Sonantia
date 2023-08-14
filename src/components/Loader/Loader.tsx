@@ -4,7 +4,7 @@ const Loader = () => {
     const [className, setClassName] = useState('visible');
     setTimeout(() => {
         setClassName('hidden')
-    }, 6500);
+    }, 4500);
     return (
         <div className={`loader ${className}`}>
             <div className="loader__scene">

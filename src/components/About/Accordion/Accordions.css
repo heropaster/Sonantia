@@ -13,13 +13,13 @@
   background: #fff;
   height: -moz-max-content;
   height: max-content;
-  color: #F76C5E;
+  color: #f76c5e;
 }
 .accordion-container .accordion__item__header {
   width: 100%;
   height: -moz-min-content;
   height: min-content;
-  background-color: #b7cce5;
+  background-color: #aad1ff;
   border-radius: 15px;
   cursor: pointer;
   padding: 15px 10px;
