@@ -6,7 +6,7 @@ import Start from "../Start/Start.tsx";
 const Interactions = () => {
   const [inputValue, setInputValue] = useState("");
   const [currentWord, setCurrentWord] = React.useState<string>('')
-  const [words, setWords] = useState<string[]>([]);
+  const [words, setWords] = useState<number>(0);
   const handleValueChange = (value: string) => {
     setInputValue(value);
   };

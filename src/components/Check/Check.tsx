@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 import Button from "@mui/material/Button";
 import Score from "../Score/Score.tsx";
-const Check = (props: {value: string, word: string, wordsList: string[]}) => {
+const Check = (props: {value: string, word: string, wordsList: number}) => {
   const [score, setScore] = useState(0)
   const handleClick = () => {
     checkAnswer(props.value)
@@ -11,7 +11,7 @@ const Check = (props: {value: string, word: string, wordsList: string[]}) => {
 
     if (answer.toLowerCase() ===  props.word.toLowerCase()) {
       
-      setScore(score + Math.floor(1 / props.wordsList.length * 100))
+      setScore(score + Math.floor(1 / props.wordsList * 100))
     }
    
   }

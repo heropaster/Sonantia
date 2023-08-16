@@ -8,7 +8,7 @@
 }
 .progress-container .progress {
   box-sizing: border-box;
-  height: 25px;
+  height: 23px;
   max-width: 576px;
   background-color: #ff7f51;
   border-radius: 40px;
